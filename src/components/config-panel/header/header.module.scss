@@ -1,0 +1,41 @@
+.root {
+  display: flex;
+  padding: 2px 30px;
+  align-items: center;
+  @media screen and (min-width: 800px) {
+    padding: 5px 30px;
+  }
+}
+
+.description {
+  display: none;
+  @media screen and (min-width: 800px) {
+    display: block;
+  }
+}
+
+.lang_buttons {
+  display: flex;
+  .button {
+    padding: 8px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    &:hover {
+      outline: 1px solid #ebebeb91;
+    }
+    &:active {
+      outline: 1px solid white;
+    }
+  }
+  .flags {
+    width: 16.75px;
+    height: 11.9px;
+  }
+}
+
+// .divider {
+//   border-top: 2px solid #f67c04;
+// }

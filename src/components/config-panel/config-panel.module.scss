@@ -1,0 +1,58 @@
+.root {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 100px;
+  overflow: auto;
+  background-color: #131313;
+  @media screen and (min-width: 800px) {
+    width: 380px;
+
+    overflow-x: hidden;
+  }
+}
+.actions_container {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: 800px) {
+    width: 380px;
+  }
+}
+.actions_button {
+  width: 250px;
+  //border: 1px solid white;
+  //background: rgba(255, 255, 255, 0.027);
+  background: transparent;
+  border: 2px solid #f67c04;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  &:hover {
+    background: rgb(48, 48, 48);
+  }
+  &:active {
+    border-color: white;
+  }
+}
+.actions_button_secondary {
+  width: 250px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  &:hover {
+    background: rgb(48, 48, 48);
+  }
+  &:active {
+    border-color: white;
+  }
+}
+
+.divider {
+  border-top: 1px solid white;
+}

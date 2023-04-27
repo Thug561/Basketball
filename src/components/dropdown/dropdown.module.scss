@@ -1,0 +1,19 @@
+.root {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  width: 100%;
+  // display: flex;
+}
+
+.button_content {
+  display: flex;
+  height: 58px;
+  align-items: center;
+  padding: 18px 30px;
+  &:hover {
+    background-color: #1d1d1d;
+  }
+
+  //background: white;
+}

@@ -1,0 +1,56 @@
+.root {
+  //display: none;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+  // background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/basketball-court-photorealistic-3d-serg-klyosov.jpg');
+  // background-size: cover;
+  @media screen and (min-width: 800px) {
+    //display: block;
+    // background: #000;
+    //background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/basketball-court-photorealistic-3d-serg-klyosov.jpg');
+    // background-size: cover;
+    width: calc(100vw - 380px);
+  }
+}
+.mobile_actions {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  padding: 20px 5px;
+  justify-content: center;
+  //border-top: 2px solid gray;
+}
+.actions_button {
+  width: 100%;
+  max-width: 200px;
+  background: #111;
+  border: 2px solid #f67c04;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 13px 5px;
+  &:active {
+    border-color: #ebebeb;
+  }
+  &:hover {
+    background: rgb(48, 48, 48);
+  }
+}
+.actions_button_secondary {
+  width: 100%;
+  max-width: 200px;
+  background: #111;
+  border: 2px solid #ffffff;
+
+  cursor: pointer;
+  padding: 13px 5px;
+  &:active {
+    border-color: #ebebeb;
+  }
+  &:hover {
+    background: rgb(48, 48, 48);
+  }
+}
